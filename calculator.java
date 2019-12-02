@@ -22,7 +22,7 @@ public class calculator implements ActionListener
     JTextArea textarea=new JTextArea(2,10);
     
     
-  //creating buttons  
+   
     JButton button1=new JButton("1");
     JButton button2=new JButton("2");
     JButton button3=new JButton("3");
@@ -71,7 +71,7 @@ public class calculator implements ActionListener
         textarea.setPreferredSize(new Dimension(2,10));
         textarea.setLineWrap(true);
         
-        //numeric buttons
+       
        button1.setPreferredSize(new Dimension(100,40));
        button2.setPreferredSize(new Dimension(100,40));
        button3.setPreferredSize(new Dimension(100,40));
@@ -84,7 +84,7 @@ public class calculator implements ActionListener
        button0.setPreferredSize(new Dimension(100,40));
       
        
-       //operations button
+       
        
        add.setPreferredSize(new Dimension(100,40));
        
@@ -92,7 +92,7 @@ public class calculator implements ActionListener
        sub.setPreferredSize(new Dimension(100,40));
       
        mul.setPreferredSize(new Dimension(100,40));
-       
+       dot.setPreferredSize(new Dimension(100,400));
        
        div.setPreferredSize(new Dimension(100,40));
       
@@ -104,7 +104,6 @@ public class calculator implements ActionListener
       clear.setPreferredSize(new Dimension(100,40));
        
     	
-       //adding buttons to panel
        panel.add(button1);
        panel.add(button2);
        panel.add(button3);
@@ -121,9 +120,9 @@ public class calculator implements ActionListener
        panel.add(mul);
        panel.add(eq);
        panel.add(clear);
+       panel.add(dot);
        
-       
-       //providing actions to the buttons
+     
        
        button1.addActionListener((ActionListener) this);
        button2.addActionListener((ActionListener) this);
@@ -141,7 +140,7 @@ public class calculator implements ActionListener
        clear.addActionListener((ActionListener) this);
        eq.addActionListener((ActionListener) this);
        mul.addActionListener((ActionListener) this);
-       
+       dot.addActionListener((ActionListener) this);
        
        
        
